@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose an Option:</h1>
+    <label for="">I have a car</label>
+    <button id="button1">Go to Page 2</button><br>
+    <label for="">I don't have a car</label>
+    <button id="button2">Go to Page 3</button>
+
+    <script>
+        document.getElementById("button1").onclick = function () {
+            location.href = "provider"; // Replace "page2.html" with the URL of your second page
+        };
+        
+        document.getElementById("button2").onclick = function () {
+            location.href = "receiver"; // Replace "page3.html" with the URL of your third page
+        };
+    </script>
+</body>
+</html>

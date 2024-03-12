@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Provider Data</h2>
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Car Name</th>
+        <th>Seats Available</th>
+    </tr>
+    {% for provider in provider_data %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ provider.p_name }}</td>
+        <td>{{ provider.p_email }}</td>
+        <td>{{ provider.car_name }}</td>
+        <td>{{ provider.seats_available }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<!-- Display receiver data -->
+<h2>Receiver Data</h2>
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    {% for receiver in receiver_data %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ receiver.r_name }}</td>
+        <td>{{ receiver.r_email }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
